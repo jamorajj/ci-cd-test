@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
  
 const sq = new Sequelize('nodeauth', 'root', 'password', {
-    host: 'localhost',
+    host: 'mysql',
     dialect: 'mysql'
   });
  

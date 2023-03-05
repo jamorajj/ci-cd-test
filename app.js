@@ -48,4 +48,4 @@ mysql.createConnection({
   connection.query('CREATE DATABASE IF NOT EXISTS nodeauth;').then(() => {
     startServer(app, sq);
   })
-})
+});
