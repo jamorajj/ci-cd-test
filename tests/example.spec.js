@@ -18,7 +18,7 @@ test('can go to Login', async ({ page }) => {
 test('can go to Signup', async ({ page }) => {
   await page.goto('http://localhost:3000/');
 
-  await page.getByTestId('tSignUp').click();
+  await page.getByTestId('tSignUpLink').click();
 
   await expect(page).toHaveURL(/.*signup/);
 });

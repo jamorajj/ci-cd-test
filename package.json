@@ -21,7 +21,8 @@
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js",
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "testcase": "npx playwright test --project=chromium"
   },
   "keywords": [],
   "author": "",
