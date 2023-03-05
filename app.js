@@ -41,11 +41,13 @@ async function startServer(app, sq) {
   app.use(authRoutes);
 }
 
-mysql.createConnection({
-  user     : 'root',
-  password : 'password'
-}).then((connection) => {
-  connection.query('CREATE DATABASE IF NOT EXISTS nodeauth;').then(() => {
-    startServer(app, sq);
-  })
-});
+startServer(app, sq);
+
+// mysql.createConnection({
+//   user     : 'root',
+//   password : 'password'
+// }).then((connection) => {
+//   connection.query('CREATE DATABASE IF NOT EXISTS nodeauth;').then(() => {
+//     startServer(app, sq);
+//   })
+// });
